@@ -1,0 +1,25 @@
+/* =========================
+   Light Theme
+========================= */
+
+:root {
+  --color-bg: #fff;
+  --color-surface: #fafafa;
+  --color-text: #111;
+  --color-muted: #555;
+  --color-border: #e5e5e5;
+  --color-accent: #111;
+}
+
+/* =========================
+     Dark Theme
+  ========================= */
+
+[data-theme='dark'] {
+  --color-bg: #0f172a;
+  --color-surface: #1e293b;
+  --color-text: #f1f5f9;
+  --color-muted: #94a3b8;
+  --color-border: #334155;
+  --color-accent: #fff;
+}
