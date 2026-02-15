@@ -1,6 +1,14 @@
+import { Download } from 'lucide-react'
 import './home.css'
+import { trackEvent } from '../../analytics'
+import { AnalyticsEvent } from '../../AnalyticsEvent'
+import { useEffect } from 'react'
 
 export default function Home() {
+  useEffect(() => {
+    document.title = 'Rupam Datta | Home'
+  }, [])
+
   return (
     <div className="home">
       <section className="hero">
@@ -25,6 +33,18 @@ export default function Home() {
           <li>Building reusable, predictable component systems</li>
           <li>Writing code that teams can understand and extend</li>
         </ul>
+      </section>
+
+      <section className="cta">
+        <a
+          href="/resume-rupam-datta.pdf"
+          download
+          onClick={() =>
+            trackEvent(AnalyticsEvent.ResumeDownload, 'engagement', 'home')
+          }
+        >
+          <Download size={18} /> Download Resume
+        </a>
       </section>
 
       {/* <section className="cta">

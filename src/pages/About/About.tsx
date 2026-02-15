@@ -1,6 +1,11 @@
 import './about.css'
+import { useEffect } from 'react'
 
 export default function About() {
+  useEffect(() => {
+    document.title = 'Rupam Datta | About'
+  }, [])
+
   return (
     <div className="about">
       <section className="about__intro">

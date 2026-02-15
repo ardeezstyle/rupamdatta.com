@@ -1,6 +1,11 @@
+import { useEffect } from 'react'
 import './work.css'
 
 export default function Work() {
+  useEffect(() => {
+    document.title = 'Rupam Datta | Work'
+  }, [])
+
   return (
     <div className="work">
       <section className="work__intro">

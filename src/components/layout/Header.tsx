@@ -1,5 +1,8 @@
 import { NavLink } from 'react-router-dom'
 import { useEffect, useState } from 'react'
+import { Download, Moon, Sun } from 'lucide-react'
+import { trackEvent } from '../../analytics'
+import { AnalyticsEvent } from '../../AnalyticsEvent'
 
 export default function Header() {
   const [theme, setTheme] = useState<'light' | 'dark'>('light')
@@ -7,6 +10,10 @@ export default function Header() {
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)
   }, [theme])
+
+  const handleResumeDownload = () => {
+    trackEvent(AnalyticsEvent.ResumeDownload, 'engagement', 'header')
+  }
 
   return (
     <header className="header">
@@ -30,14 +37,29 @@ export default function Header() {
             </NavLink>
           </nav>
 
-          <button
-            className="theme-toggle"
-            onClick={() =>
-              setTheme((prev) => (prev === 'light' ? 'dark' : 'light'))
-            }
-          >
-            {theme === 'light' ? 'Dark' : 'Light'}
-          </button>
+          {/* Action icons cluster */}
+          <div className="header__actions">
+            <button
+              className="theme-toggle"
+              onClick={() =>
+                setTheme((prev) => (prev === 'light' ? 'dark' : 'light'))
+              }
+              aria-label="Toggle theme"
+            >
+              {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
+            </button>
+
+            <a
+              href="/resume-rupam-datta.pdf"
+              download
+              onClick={handleResumeDownload}
+              className="resume-link"
+              aria-label="Download resume"
+              title="Download Resume"
+            >
+              <Download size={20} />
+            </a>
+          </div>
         </div>
       </div>
     </header>

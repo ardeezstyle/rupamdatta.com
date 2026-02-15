@@ -1,6 +1,13 @@
+import { useEffect } from 'react'
+import { trackEvent } from '../../analytics'
+import { AnalyticsEvent } from '../../AnalyticsEvent'
 import './contact.css'
 
 export default function Contact() {
+  useEffect(() => {
+    document.title = 'Rupam Datta | Contact'
+  }, [])
+
   return (
     <div className="contact">
       <section className="contact__intro">
@@ -15,7 +22,14 @@ export default function Contact() {
         <ul>
           <li>
             <strong>Email:</strong>{' '}
-            <a href="mailto:rupam.datta01@gmail.com">rupam.datta01@gmail.com</a>
+            <a
+              href="mailto:rupam.datta01@gmail.com"
+              onClick={() =>
+                trackEvent(AnalyticsEvent.EmailClick, 'engagement', 'contact')
+              }
+            >
+              rupam.datta01@gmail.com
+            </a>
           </li>
           <li>
             <strong>LinkedIn:</strong>{' '}
@@ -23,6 +37,9 @@ export default function Contact() {
               href="https://www.linkedin.com/in/rupamdatta/"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() =>
+                trackEvent(AnalyticsEvent.LinkedInClick, 'outbound', 'contact')
+              }
             >
               www.linkedin.com/in/rupamdatta
             </a>
@@ -33,6 +50,9 @@ export default function Contact() {
               href="https://github.com/ardeezstyle"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() =>
+                trackEvent(AnalyticsEvent.GithubClick, 'outbound', 'contact')
+              }
             >
               github.com/ardeezstyle
             </a>
