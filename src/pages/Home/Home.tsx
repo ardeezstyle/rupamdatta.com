@@ -27,7 +27,7 @@ export default function Home() {
         </ul>
       </section>
 
-      <section className="cta">
+      {/* <section className="cta">
         <p>
           I also experiment with UI patterns and smaller focused builds. You can
           explore those at{' '}
@@ -40,7 +40,7 @@ export default function Home() {
           </a>
           .
         </p>
-      </section>
+      </section> */}
     </div>
   )
 }

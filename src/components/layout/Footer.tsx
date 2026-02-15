@@ -9,7 +9,7 @@ export default function Footer() {
       }}
     >
       <p>© {new Date().getFullYear()} Rupam Datta</p>
-      <p>
+      {/* <p>
         Experiments & UI demos →{' '}
         <a
           href="https://mydemos.co.in"
@@ -18,7 +18,7 @@ export default function Footer() {
         >
           mydemos.co.in
         </a>
-      </p>
+      </p> */}
     </footer>
   )
 }

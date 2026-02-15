@@ -39,7 +39,7 @@ export default function Work() {
         </p>
       </section>
 
-      <section className="work__cta">
+      {/* <section className="work__cta">
         <p>
           For smaller experiments and focused builds, visit{' '}
           <a
@@ -51,7 +51,7 @@ export default function Work() {
           </a>
           .
         </p>
-      </section>
+      </section> */}
     </div>
   )
 }
