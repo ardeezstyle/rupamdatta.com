@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { trackEvent } from '../../analytics'
 import { AnalyticsEvent } from '../../AnalyticsEvent'
 import './contact.css'
+import { Helmet } from 'react-helmet-async'
 
 export default function Contact() {
   useEffect(() => {
@@ -11,6 +12,13 @@ export default function Contact() {
   return (
     <div className="contact">
       <section className="contact__intro">
+        <Helmet>
+          <title>Rupam Datta | Contact | Staff Engineer</title>
+          <meta
+            name="description"
+            content="Get in touch with Rupam Datta, Staff Software Engineer in Bangalore with 18+ years of experience in building scalable UI and frontend systems."
+          />
+        </Helmet>
         <h1>Contact</h1>
         <p>
           I’m always open to conversations around frontend engineering, UI

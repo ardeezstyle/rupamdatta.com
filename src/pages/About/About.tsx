@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async'
 import './about.css'
 import { useEffect } from 'react'
 
@@ -9,10 +10,18 @@ export default function About() {
   return (
     <div className="about">
       <section className="about__intro">
+        <Helmet>
+          <title>Rupam Datta | About | Staff Engineer</title>
+          <meta
+            name="description"
+            content="I am a Staff Software Engineer with 18+ years of experience designing and building scalable frontend architectures using React, Angular, and modern web technologies."
+          />
+        </Helmet>
         <h1>About</h1>
         <p>
-          I am a frontend engineer with over 17 years of experience building web
-          applications across different domains and team environments.
+          I am a Staff Software Engineer with 18+ years of experience designing
+          and building scalable frontend architectures using React, Angular, and
+          modern web technologies.
         </p>
       </section>
 

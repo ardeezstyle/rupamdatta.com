@@ -20,7 +20,7 @@ export default function Home() {
 
         <p className="hero__description">
           I design and build simple, scalable user interfaces for complex
-          data-driven products. With 17+ years of experience, I focus on
+          data-driven products. With 18+ years of experience, I focus on
           clarity, maintainability, and long-term system health.
         </p>
       </section>
