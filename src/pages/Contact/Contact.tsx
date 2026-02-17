@@ -18,6 +18,7 @@ export default function Contact() {
             name="description"
             content="Get in touch with Rupam Datta, Staff Software Engineer in Bangalore with 18+ years of experience in building scalable UI and frontend systems."
           />
+          <link rel="canonical" href="https://www.rupamdatta.com/contact" />
         </Helmet>
         <h1>Contact</h1>
         <p>

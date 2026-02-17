@@ -16,6 +16,7 @@ export default function Work() {
             name="description"
             content="With 18+ years of experience in frontend engineering, I have delivered scalable React and Angular solutions that improve performance, usability, and maintainability across enterprise platforms."
           />
+          <link rel="canonical" href="https://www.rupamdatta.com/work" />
         </Helmet>
         <h1>Work</h1>
         <p>

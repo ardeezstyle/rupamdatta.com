@@ -16,6 +16,7 @@ export default function About() {
             name="description"
             content="I am a Staff Software Engineer with 18+ years of experience designing and building scalable frontend architectures using React, Angular, and modern web technologies."
           />
+          <link rel="canonical" href="https://www.rupamdatta.com/about" />
         </Helmet>
         <h1>About</h1>
         <p>
