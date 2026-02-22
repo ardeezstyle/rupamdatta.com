@@ -130,7 +130,6 @@
   /* 768px */
 
   .header__inner {
-    flex-direction: column;
     gap: 1rem;
   }
 
@@ -165,5 +164,41 @@
   .header__nav {
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+
+/* Hide mobile elements on desktop */
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: inline-flex;
+}
+
+/* Mobile styles */
+@media (width <= 768px) {
+  .header__nav {
+    display: none;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: inline-flex;
+    border: none;
+    background-color: transparent;
+    color: var(--color-text);
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border-top: 1px solid var(--border-color);
+    background: var(--background);
   }
 }
