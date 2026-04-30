@@ -20,7 +20,7 @@ export default function About() {
         </Helmet>
         <h1>About</h1>
         <p>
-          I am a Staff Software Engineer with 18+ years of experience designing
+          I am a Senior Staff Engineer with 18+ years of experience designing
           and building scalable frontend architectures using React, Angular, and
           modern web technologies.
         </p>
