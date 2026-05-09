@@ -1,23 +1,16 @@
-import { useEffect } from 'react'
+import SEO from '../../components/SEO'
 import './work.css'
-import { Helmet } from 'react-helmet-async'
 
 export default function Work() {
-  useEffect(() => {
-    document.title = 'Rupam Datta | Work'
-  }, [])
-
   return (
     <div className="work">
       <section className="work__intro">
-        <Helmet>
-          <title>Rupam Datta | Work | Staff Engineer</title>
-          <meta
-            name="description"
-            content="With 18+ years of experience in frontend engineering, I have delivered scalable React and Angular solutions that improve performance, usability, and maintainability across enterprise platforms."
-          />
-          <link rel="canonical" href="https://www.rupamdatta.com/work" />
-        </Helmet>
+        <SEO
+          title="Work | Rupam Datta | Frontend Architecture & UI Systems"
+          description="Frontend architecture, scalable UI systems, design systems, and data-intensive interfaces built across enterprise platforms using React, Angular, and TypeScript with a focus on maintainability, correctness, and long-term system health."
+          fullUrl="https://www.rupamdatta.com/work"
+        />
+
         <h1>Work</h1>
         <p>
           My work focuses on building scalable frontend systems for complex

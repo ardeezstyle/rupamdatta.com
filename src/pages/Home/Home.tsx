@@ -2,15 +2,17 @@ import { Download } from 'lucide-react'
 import './home.css'
 import { trackEvent } from '../../analytics'
 import { AnalyticsEvent } from '../../AnalyticsEvent'
-import { useEffect } from 'react'
+import SEO from '../../components/SEO'
 
 export default function Home() {
-  useEffect(() => {
-    document.title = 'Rupam Datta | Home'
-  }, [])
-
   return (
     <div className="home">
+      <SEO
+        title="Rupam Datta | Senior Staff Software Engineer | Frontend Architecture"
+        description="Senior Staff Software Engineer with 18+ years of experience building scalable frontend systems using React, Angular, and TypeScript. Specialised in frontend architecture, design systems, and data-intensive enterprise applications."
+        fullUrl="https://www.rupamdatta.com/"
+      />
+
       <section className="hero">
         <h1 className="hero__name">Rupam Datta</h1>
 

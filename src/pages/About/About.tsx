@@ -1,23 +1,16 @@
-import { Helmet } from 'react-helmet-async'
 import './about.css'
-import { useEffect } from 'react'
+import SEO from '../../components/SEO'
 
 export default function About() {
-  useEffect(() => {
-    document.title = 'Rupam Datta | About'
-  }, [])
-
   return (
     <div className="about">
       <section className="about__intro">
-        <Helmet>
-          <title>Rupam Datta | About | Staff Engineer</title>
-          <meta
-            name="description"
-            content="I am a Staff Software Engineer with 18+ years of experience designing and building scalable frontend architectures using React, Angular, and modern web technologies."
-          />
-          <link rel="canonical" href="https://www.rupamdatta.com/about" />
-        </Helmet>
+        <SEO
+          title="About | Rupam Datta | Senior Staff Software Engineer"
+          description="Learn more about Rupam Datta, a Senior Staff Software Engineer focused on frontend architecture, scalable UI systems, design systems, and data-intensive enterprise applications built with React, Angular, and TypeScript."
+          fullUrl="https://www.rupamdatta.com/about"
+        />
+
         <h1>About</h1>
         <p>
           I am a Senior Staff Software Engineer with 18+ years of experience
