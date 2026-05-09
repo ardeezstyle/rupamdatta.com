@@ -2,36 +2,109 @@ import { Download } from 'lucide-react'
 import './home.css'
 import { trackEvent } from '../../analytics'
 import { AnalyticsEvent } from '../../AnalyticsEvent'
-import { useEffect } from 'react'
+import SEO from '../../components/SEO'
 
 export default function Home() {
-  useEffect(() => {
-    document.title = 'Rupam Datta | Home'
-  }, [])
-
   return (
     <div className="home">
+      <SEO
+        title="Rupam Datta | Senior Staff Software Engineer | Frontend Architecture"
+        description="Senior Staff Software Engineer with 18+ years of experience building scalable frontend systems using React, Angular, and TypeScript. Specialised in frontend architecture, design systems, and data-intensive enterprise applications."
+        fullUrl="https://www.rupamdatta.com/"
+      />
+
       <section className="hero">
         <h1 className="hero__name">Rupam Datta</h1>
 
         <h2 className="hero__title">
-          Staff Software Engineer — Frontend & UI Systems
+          Senior Staff Software Engineer — Frontend Architecture & UI Systems
         </h2>
 
         <p className="hero__description">
-          I design and build simple, scalable user interfaces for complex
-          data-driven products. With 18+ years of experience, I focus on
-          clarity, maintainability, and long-term system health.
+          I design and build scalable frontend systems for complex, data-driven
+          platforms. With 18+ years of experience across enterprise products, I
+          focus on frontend architecture, design systems, and data-intensive UIs
+          where correctness, consistency, and long-term maintainability are
+          critical.
         </p>
+
+        <p className="hero__description">
+          My work spans on-prem, hybrid, and cloud environments, building UI
+          foundations that teams and products scale on top of. I specialise in
+          simplifying complex systems while preserving backward compatibility
+          and protecting existing customers.
+        </p>
+      </section>
+
+      <section className="focus">
+        <h3>What I focus on</h3>
+
+        <div className="focus__item">
+          <strong>Frontend architecture for complex systems</strong>
+          <p>
+            Designing UI foundations that scale across teams, products, and
+            evolving platform architectures.
+          </p>
+        </div>
+
+        <div className="focus__item">
+          <strong>Design systems & reusable UI platforms</strong>
+          <p>
+            Building predictable, reusable component systems that improve
+            consistency and development velocity.
+          </p>
+        </div>
+
+        <div className="focus__item">
+          <strong>Data-intensive and visualization-driven UIs</strong>
+          <p>
+            Translating complex data relationships into clear, usable
+            interfaces.
+          </p>
+        </div>
+
+        <div className="focus__item">
+          <strong>Long-term system health</strong>
+          <p>
+            Ensuring maintainability, backward compatibility, and correctness in
+            fast-moving codebases.
+          </p>
+        </div>
+      </section>
+
+      <section className="philosophy">
+        <h3>How I work</h3>
+        <p>I work as a senior individual contributor who:</p>
+
+        <ul>
+          <li>
+            Identifies the right problems to solve, not just the obvious ones
+          </li>
+          <li>Drives architecture decisions across frontend systems</li>
+          <li>Partners closely with product, UX, and backend teams</li>
+          <li>Mentors engineers through complex problem spaces</li>
+          <li>Balances speed of delivery with long-term system stability</li>
+        </ul>
       </section>
 
       <section className="philosophy">
         <h3>What I care about</h3>
 
         <ul>
-          <li>Turning complex requirements into clean UI architecture</li>
-          <li>Building reusable, predictable component systems</li>
-          <li>Writing code that teams can understand and extend</li>
+          <li>
+            Turning complex requirements into simple, scalable UI architecture
+          </li>
+          <li>
+            Building systems that other engineers can easily understand and
+            extend
+          </li>
+          <li>
+            Maintaining correctness in permission-driven and high-risk workflows
+          </li>
+          <li>
+            Reducing technical debt while preserving backward compatibility
+          </li>
+          <li>Creating UI platforms that enable teams, not slow them down</li>
         </ul>
       </section>
 

@@ -1,7 +1,7 @@
 .about {
   display: flex;
   flex-direction: column;
-  gap: 3.75rem; /* 60px */
+  gap: 2.5rem;
 }
 
 .about h1 {
