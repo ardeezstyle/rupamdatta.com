@@ -1,7 +1,7 @@
 .work {
   display: flex;
   flex-direction: column;
-  gap: 3.75rem; /* 60px */
+  gap: 2.5rem;
 }
 
 .work h1 {
@@ -22,7 +22,15 @@
 .work__area {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem; /* 12px */
+}
+
+.work__area ul {
+  padding-left: 1.25rem; /* 20px */
+  line-height: 1.8;
+}
+
+.work__area p {
+  margin: 0 0 0.5rem;
 }
 
 .work__cta a {
