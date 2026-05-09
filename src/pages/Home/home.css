@@ -1,26 +1,26 @@
 .home {
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 2.5rem;
 }
 
 /* Hero */
 
 .hero__name {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 600;
   margin-bottom: 12px;
 }
 
 .hero__title {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
   color: var(--color-muted);
   margin-bottom: 24px;
 }
 
 .hero__description {
-  font-size: 18px;
+  font-size: 1.125rem;
   max-width: 720px;
   line-height: 1.7;
 }
@@ -28,13 +28,37 @@
 /* Philosophy */
 
 .philosophy h3 {
-  font-size: 20px;
+  font-size: 1.25rem;
   margin-bottom: 20px;
 }
 
 .philosophy ul {
   padding-left: 20px;
   line-height: 1.8;
+}
+
+/* What I focus on */
+
+.focus {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.focus__item strong {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.focus__item p {
+  font-size: 1rem;
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.focus__item {
+  display: flex;
+  flex-direction: column;
 }
 
 /* CTA */
