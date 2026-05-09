@@ -22,12 +22,19 @@ export default function Contact() {
         </Helmet>
         <h1>Contact</h1>
         <p>
-          I’m always open to conversations around frontend engineering, UI
-          architecture, and interesting product problems.
+          I'm always open to conversations around frontend architecture,
+          scalable UI systems, and complex product engineering challenges.
+        </p>
+        <p>
+          Whether it's frontend platform design, design systems, data-intensive
+          applications, or building maintainable systems at scale — I enjoy
+          connecting with engineers, product teams, and organisations working on
+          meaningful technical problems.
         </p>
       </section>
 
       <section className="contact__details">
+        <p>You can reach me here:</p>
         <ul>
           <li>
             <strong>Email:</strong>{' '}
@@ -67,6 +74,23 @@ export default function Contact() {
             </a>
           </li>
         </ul>
+      </section>
+
+      <section className="contact__details">
+        <p>I'm particularly interested in discussions around:</p>
+        <ul>
+          <li>Frontend architecture and platform engineering</li>
+          <li>React, Angular, and TypeScript ecosystems</li>
+          <li>Design systems and reusable UI platforms</li>
+          <li>Data visualization and workflow-driven interfaces</li>
+          <li>Engineering practices for large frontend codebases</li>
+          <li>Mentoring and scaling frontend teams</li>
+        </ul>
+        <p>
+          You can also connect with me for collaborations, consulting
+          discussions, or opportunities involving large-scale frontend systems
+          and UI architecture.
+        </p>
       </section>
     </div>
   )
